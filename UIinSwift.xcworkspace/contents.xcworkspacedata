@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Calc/Calc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UseSizeClasses/UseSizeClasses.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BeyoundLimits/BeyoundLimits.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIGestureRecognizers/UIGestureRecognizers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Animation/Animation.xcodeproj">
+   </FileRef>
+</Workspace>
