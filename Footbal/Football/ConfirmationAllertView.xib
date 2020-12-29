@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmationAllertView" customModule="BeyoundLimits" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="iN0-l3-epB" id="U0C-Kf-14f"/>
+                <outlet property="okButton" destination="jA3-i6-Hy1" id="V0t-qD-KRv"/>
+                <outlet property="textLabel" destination="9ge-zk-GgS" id="2KB-dg-Tby"/>
+                <outlet property="titleLabel" destination="3cz-7u-hrC" id="bw7-Nk-DZA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConfirmationAllertView" customModule="BeyoundLimits" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="241"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="cBb-dh-V0V">
+                    <rect key="frame" x="30" y="30" width="322" height="68.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Alert Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cz-7u-hrC" customClass="ConfirmationAllertViewController" customModule="BeyoundLimits" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="322" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="qwerty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ge-zk-GgS">
+                            <rect key="frame" x="0.0" y="48" width="322" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jA3-i6-Hy1">
+                    <rect key="frame" x="20" y="185" width="342" height="36"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="okTapped:" destination="-1" eventType="touchUpInside" id="eYa-iH-8qu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jA3-i6-Hy1" secondAttribute="bottom" constant="20" id="Myt-8o-2Mf"/>
+                <constraint firstItem="jA3-i6-Hy1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Uva-2w-IOu"/>
+                <constraint firstItem="jA3-i6-Hy1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="h0r-gl-eaw"/>
+                <constraint firstItem="cBb-dh-V0V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="mdG-Sg-xab"/>
+                <constraint firstItem="jA3-i6-Hy1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cBb-dh-V0V" secondAttribute="bottom" constant="10" id="oUa-WU-cqi"/>
+                <constraint firstItem="cBb-dh-V0V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="ryK-mB-crc"/>
+                <constraint firstItem="cBb-dh-V0V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tNA-Ne-iru"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-42" y="-30"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
