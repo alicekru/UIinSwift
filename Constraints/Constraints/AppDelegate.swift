@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Football
+//  Constraints
 //
-//  Created by Alice Krutienko on 29.12.2020.
+//  Created by Alice Krutienko on 02.01.2021.
 //
 
 import UIKit

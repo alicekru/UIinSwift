@@ -2,13 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Calc/Calc.xcodeproj">
+      location = "group:Constraints/Constraints.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:UseSizeClasses/UseSizeClasses.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:BeyoundLimits/BeyoundLimits.xcodeproj">
+      location = "group:Footbal/Football.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:UIGestureRecognizers/UIGestureRecognizers.xcodeproj">
